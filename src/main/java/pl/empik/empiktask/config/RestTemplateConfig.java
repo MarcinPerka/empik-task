@@ -10,7 +10,7 @@ import pl.empik.empiktask.config.handler.RestTemplateResponseErrorHandler;
 public class RestTemplateConfig {
 
     @Bean
-    public RestTemplate restTemplate(RestTemplateBuilder restTemplateBuilder, RestTemplateResponseErrorHandler errorHandler) {
+    public RestTemplate restTemplate(final RestTemplateBuilder restTemplateBuilder, final RestTemplateResponseErrorHandler errorHandler) {
         return restTemplateBuilder.errorHandler(errorHandler).build();
     }
 

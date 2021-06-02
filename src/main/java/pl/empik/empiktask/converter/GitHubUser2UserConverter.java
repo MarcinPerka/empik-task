@@ -12,7 +12,7 @@ import java.math.RoundingMode;
 public class GitHubUser2UserConverter implements Converter<GitHubUser, User> {
 
     @Override
-    public User convert(GitHubUser gitHubUser) {
+    public User convert(final GitHubUser gitHubUser) {
         return User.builder()
                 .id(gitHubUser.id())
                 .login(gitHubUser.login())
